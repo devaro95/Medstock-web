@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Política de privacidad — MedBox</title>
+<meta name="description" content="Política de privacidad de MedBox: qué datos se recogen, para qué se usan y qué derechos tienes." />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💊</text></svg>" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="nav">
+    <div class="container nav-inner">
+      <div class="brand">
+        <span class="brand-badge">💊</span>
+        <span class="brand-name">MedBox</span>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html#funciones">Funciones</a>
+        <a href="index.html#privacidad">Privacidad</a>
+        <a href="index.html#faq">FAQ</a>
+      </nav>
+      <a class="btn btn-ghost nav-cta" href="index.html#descarga">Descargar</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="legal">
+      <div class="container legal-content">
+        <a href="index.html" class="legal-back">← Volver a MedBox</a>
+
+        <h1>Política de privacidad</h1>
+        <p class="legal-updated">Última actualización: 19 de julio de 2026</p>
+
+        <p>
+          Esta política explica qué datos trata <strong>MedBox</strong> (la
+          "app"), con qué finalidad y qué derechos tienes al respecto.
+          MedBox está desarrollada por Álvaro (en adelante, "nosotros",
+          contacto en <a href="mailto:hola@medbox.app">hola@medbox.app</a>).
+        </p>
+
+        <h2>1. Qué datos tratamos</h2>
+        <p>MedBox está diseñada para que la mayor parte de tu información nunca salga de tu dispositivo:</p>
+        <ul>
+          <li><strong>Inventario de medicamentos</strong> (nombre, cantidad, fecha de caducidad y C.N.): se guarda únicamente en tu dispositivo (SharedPreferences en Android, NSUserDefaults en iOS). Nunca se envía a ningún servidor nuestro, porque no tenemos servidor propio de almacenamiento.</li>
+          <li><strong>Consultas a CIMA (AEMPS)</strong>: cuando introduces un Código Nacional o escaneas un código de barras, la app envía ese código a la API pública de la Agencia Española de Medicamentos y Productos Sanitarios (AEMPS) para obtener el nombre del medicamento y, si lo pides, su prospecto. Esa consulta la recibe la AEMPS, no nosotros.</li>
+          <li><strong>Cámara</strong>: se usa solo para leer el código de barras en el propio dispositivo. La app no captura, guarda ni envía fotos o vídeo.</li>
+          <li><strong>Datos de uso y fallos técnicos</strong>: usamos Firebase Analytics y Firebase Crashlytics (servicios de Google) para entender de forma agregada cómo se usa la app (por ejemplo, qué pantallas se visitan o cuántos medicamentos se añaden) y para detectar errores técnicos. Esto puede incluir identificadores del dispositivo, modelo, versión del sistema operativo y registros de fallos. Estos eventos no incluyen el contenido de tu botiquín (nombres de medicamentos, cantidades, etc.).</li>
+        </ul>
+
+        <h2>2. Para qué usamos estos datos</h2>
+        <ul>
+          <li>Prestar el servicio principal de la app: llevar tu inventario de medicamentos y avisarte de caducidades.</li>
+          <li>Autocompletar el nombre y descargar el prospecto de un medicamento a partir de su Código Nacional.</li>
+          <li>Detectar y corregir errores, y entender de forma agregada qué funciones se usan más para mejorar la app.</li>
+        </ul>
+        <p>No usamos tus datos con fines publicitarios y la app no muestra anuncios.</p>
+
+        <h2>3. Con quién compartimos datos</h2>
+        <ul>
+          <li><strong>AEMPS / CIMA</strong>: recibe el código que tú consultas (nombre o C.N.), según su propia política de privacidad, disponible en su web oficial.</li>
+          <li><strong>Google (Firebase Analytics y Crashlytics)</strong>: actúa como encargado de tratamiento para las estadísticas de uso y los informes de fallos descritos arriba.</li>
+        </ul>
+        <p>No vendemos ni cedemos tus datos a terceros con fines comerciales o publicitarios.</p>
+
+        <h2>4. Cuánto tiempo conservamos los datos</h2>
+        <p>
+          El inventario de medicamentos permanece en tu dispositivo mientras
+          tengas la app instalada, o hasta que borres cada medicamento o
+          desinstales la app. Los datos de analítica y fallos se conservan
+          según los periodos de retención por defecto de Firebase (Google),
+          que puedes consultar en su documentación.
+        </p>
+
+        <h2>5. Tus derechos</h2>
+        <p>
+          Como el inventario vive solo en tu dispositivo, tienes control
+          directo sobre él: puedes editarlo, borrarlo medicamento a
+          medicamento o eliminarlo por completo desinstalando la app. Si
+          quieres ejercer tus derechos de acceso, rectificación, supresión
+          u oposición sobre los datos tratados vía Firebase, puedes
+          escribirnos a <a href="mailto:hola@medbox.app">hola@medbox.app</a>.
+        </p>
+
+        <h2>6. Menores de edad</h2>
+        <p>MedBox no está dirigida específicamente a menores de edad ni recoge deliberadamente datos de menores.</p>
+
+        <h2>7. Cambios en esta política</h2>
+        <p>
+          Podemos actualizar esta política si cambia la app o la normativa
+          aplicable. Publicaremos cualquier cambio en esta misma página con
+          su fecha de actualización.
+        </p>
+
+        <h2>8. Contacto</h2>
+        <p>
+          Para cualquier duda sobre esta política o sobre tus datos, escríbenos a
+          <a href="mailto:hola@medbox.app">hola@medbox.app</a>.
+        </p>
+
+        <p><em>Este documento tiene carácter informativo y no constituye asesoramiento legal.</em></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="brand">
+        <span class="brand-badge">💊</span>
+        <span class="brand-name">MedBox</span>
+      </div>
+      <nav class="footer-links">
+        <a href="privacy.html">Política de privacidad</a>
+        <a href="terms.html">Términos y condiciones</a>
+      </nav>
+      <p>&copy; <span id="year"></span> MedBox. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
