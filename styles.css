@@ -486,6 +486,13 @@ p { color: var(--text-secondary); }
   box-shadow: 0 14px 28px -12px rgba(0, 0, 0, 0.4);
 }
 
+.cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+}
+
 /* ---------- FAQ ---------- */
 
 .faq { padding: 0 0 88px; }
