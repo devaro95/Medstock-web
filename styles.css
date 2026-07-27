@@ -79,8 +79,10 @@ p { color: var(--text-secondary); }
   height: 36px;
   border-radius: 12px;
   background: linear-gradient(135deg, var(--accent), var(--primary));
-  font-size: 18px;
+  overflow: hidden;
 }
+
+.brand-badge svg { width: 62%; height: 62%; display: block; }
 
 .brand-name { font-weight: 800; font-size: 18px; }
 
