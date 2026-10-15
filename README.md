@@ -25,5 +25,4 @@ Enlazadas entre sí y accesibles desde el footer de la página principal.
 
 Antes de publicitarla de verdad, actualiza:
 - El enlace de descarga en la sección `#descarga` cuando la app esté publicada en Google Play.
-- El email de contacto (`hola@medbox.app`) por uno real.
 - Los textos legales de `privacy.html` y `terms.html` — son un punto de partida razonable, no asesoramiento legal; conviene que los revise un profesional antes de publicar la app.
