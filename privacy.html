@@ -46,10 +46,11 @@
         <h2>1. Qué datos tratamos</h2>
         <p>MedBox está diseñada para que la mayor parte de tu información nunca salga de tu dispositivo:</p>
         <ul>
-          <li><strong>Inventario de medicamentos</strong> (nombre, cantidad, fecha de caducidad y C.N.): se guarda únicamente en tu dispositivo (SharedPreferences en Android, NSUserDefaults en iOS). Nunca se envía a ningún servidor nuestro, porque no tenemos servidor propio de almacenamiento.</li>
-          <li><strong>Consultas a CIMA (AEMPS)</strong>: cuando introduces un Código Nacional o escaneas un código de barras, la app envía ese código a la API pública de la Agencia Española de Medicamentos y Productos Sanitarios (AEMPS) para obtener el nombre del medicamento y, si lo pides, su prospecto. Esa consulta la recibe la AEMPS, no nosotros.</li>
-          <li><strong>Cámara</strong>: se usa solo para leer el código de barras en el propio dispositivo. La app no captura, guarda ni envía fotos o vídeo.</li>
-          <li><strong>Datos de uso y fallos técnicos</strong>: usamos Firebase Analytics y Firebase Crashlytics (servicios de Google) para entender de forma agregada cómo se usa la app (por ejemplo, qué pantallas se visitan o cuántos medicamentos se añaden) y para detectar errores técnicos. Esto puede incluir identificadores del dispositivo, modelo, versión del sistema operativo y registros de fallos. Estos eventos no incluyen el contenido de tu botiquín (nombres de medicamentos, cantidades, etc.).</li>
+          <li><strong>Inventario de medicamentos</strong> (nombre, cantidad, fecha de caducidad, código nacional, notas y botiquines): se guarda únicamente en tu dispositivo. Nunca se envía a ningún servidor nuestro, porque no tenemos servidor propio de almacenamiento. Lo mismo ocurre con los prospectos descargados y los documentos que exportas (PDF, CSV o JSON): se guardan dentro de la app, en tu dispositivo.</li>
+          <li><strong>Consultas a bases de datos de medicamentos</strong>: cuando introduces o escaneas el código de un medicamento, la app envía solo ese código a la base de datos pública del país seleccionado para obtener su nombre y, si lo pides, su prospecto: CIMA de la Agencia Española de Medicamentos y Productos Sanitarios (España), la Base de Données Publique des Médicaments a través de medicaments-api.giygas.dev (Francia) u openFDA de la FDA (EE. UU.). Esas consultas las recibe cada servicio, no nosotros.</li>
+          <li><strong>Cámara</strong>: se usa para leer el código impreso en la caja del medicamento (el reconocimiento se hace en el propio dispositivo, sin enviar la imagen) y, si lo eliges, para hacer una foto del medicamento. Esas fotos se guardan solo en tu dispositivo y nunca se envían a ningún servidor.</li>
+          <li><strong>Compras dentro de la app</strong>: la compra de la versión premium la gestionan Google Play o la App Store. Nosotros no recibimos tus datos de pago; solo la confirmación de que la compra se ha realizado.</li>
+          <li><strong>Datos de uso y fallos técnicos</strong>: usamos Firebase Analytics, Firebase Crashlytics y Firebase Remote Config (servicios de Google) para entender de forma agregada cómo se usa la app (por ejemplo, qué pantallas se visitan o cuántos medicamentos se añaden) y para detectar errores técnicos. Esto puede incluir identificadores del dispositivo, modelo, versión del sistema operativo y registros de fallos. Estos eventos no incluyen el contenido de tu botiquín (nombres de medicamentos, cantidades, etc.).</li>
           <li><strong>Medición de campañas publicitarias</strong>: la app incluye el SDK de Meta (Facebook) para saber si una instalación o apertura de la app procede de un anuncio nuestro en Facebook o Instagram. Envía a Meta eventos básicos de la app (instalación, apertura y uso general), un identificador anónimo generado por el SDK, datos técnicos del dispositivo (modelo, versión del sistema operativo, idioma, zona horaria) y la dirección IP. No recogemos el identificador de publicidad del dispositivo (ni el GAID en Android ni el IDFA en iOS), no hacemos seguimiento entre apps de terceros y nunca se envía el contenido de tu botiquín.</li>
         </ul>
 
@@ -64,8 +65,9 @@
 
         <h2>3. Con quién compartimos datos</h2>
         <ul>
-          <li><strong>AEMPS / CIMA</strong>: recibe el código que tú consultas (nombre o C.N.), según su propia política de privacidad, disponible en su web oficial.</li>
-          <li><strong>Google (Firebase Analytics y Crashlytics)</strong>: actúa como encargado de tratamiento para las estadísticas de uso y los informes de fallos descritos arriba.</li>
+          <li><strong>Bases de datos de medicamentos (AEMPS/CIMA, BDPM vía medicaments-api.giygas.dev, openFDA)</strong>: reciben únicamente el código que tú consultas, según sus propias políticas de privacidad.</li>
+          <li><strong>Google Play / Apple App Store</strong>: gestionan las compras dentro de la app según sus propias políticas.</li>
+          <li><strong>Google (Firebase)</strong>: actúa como encargado de tratamiento para las estadísticas de uso y los informes de fallos descritos arriba.</li>
           <li><strong>Meta Platforms Ireland Ltd. (SDK de Meta)</strong>: recibe los eventos de la app descritos arriba para medir la atribución de nuestras campañas publicitarias, según su propia <a href="https://www.facebook.com/privacy/policy/" target="_blank" rel="noopener">política de privacidad</a>.</li>
         </ul>
         <p>No vendemos tus datos a terceros.</p>
