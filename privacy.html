@@ -34,7 +34,7 @@
         <a href="index.html" class="legal-back">← Volver a MedBox</a>
 
         <h1>Política de privacidad</h1>
-        <p class="legal-updated">Última actualización: 19 de julio de 2026</p>
+        <p class="legal-updated">Última actualización: 15 de octubre de 2026</p>
 
         <p>
           Esta política explica qué datos trata <strong>MedBox</strong> (la
@@ -50,6 +50,7 @@
           <li><strong>Consultas a CIMA (AEMPS)</strong>: cuando introduces un Código Nacional o escaneas un código de barras, la app envía ese código a la API pública de la Agencia Española de Medicamentos y Productos Sanitarios (AEMPS) para obtener el nombre del medicamento y, si lo pides, su prospecto. Esa consulta la recibe la AEMPS, no nosotros.</li>
           <li><strong>Cámara</strong>: se usa solo para leer el código de barras en el propio dispositivo. La app no captura, guarda ni envía fotos o vídeo.</li>
           <li><strong>Datos de uso y fallos técnicos</strong>: usamos Firebase Analytics y Firebase Crashlytics (servicios de Google) para entender de forma agregada cómo se usa la app (por ejemplo, qué pantallas se visitan o cuántos medicamentos se añaden) y para detectar errores técnicos. Esto puede incluir identificadores del dispositivo, modelo, versión del sistema operativo y registros de fallos. Estos eventos no incluyen el contenido de tu botiquín (nombres de medicamentos, cantidades, etc.).</li>
+          <li><strong>Medición de campañas publicitarias</strong>: la app incluye el SDK de Meta (Facebook) para saber si una instalación o apertura de la app procede de un anuncio nuestro en Facebook o Instagram. Envía a Meta eventos básicos de la app (instalación, apertura y uso general), un identificador anónimo generado por el SDK, datos técnicos del dispositivo (modelo, versión del sistema operativo, idioma, zona horaria) y la dirección IP. No recogemos el identificador de publicidad del dispositivo (ni el GAID en Android ni el IDFA en iOS), no hacemos seguimiento entre apps de terceros y nunca se envía el contenido de tu botiquín.</li>
         </ul>
 
         <h2>2. Para qué usamos estos datos</h2>
@@ -57,23 +58,26 @@
           <li>Prestar el servicio principal de la app: llevar tu inventario de medicamentos y avisarte de caducidades.</li>
           <li>Autocompletar el nombre y descargar el prospecto de un medicamento a partir de su Código Nacional.</li>
           <li>Detectar y corregir errores, y entender de forma agregada qué funciones se usan más para mejorar la app.</li>
+          <li>Medir el rendimiento de nuestras campañas publicitarias en Meta (cuántas instalaciones genera cada anuncio).</li>
         </ul>
-        <p>No usamos tus datos con fines publicitarios y la app no muestra anuncios.</p>
+        <p>La app no muestra anuncios y no usamos el contenido de tu botiquín con ningún fin publicitario.</p>
 
         <h2>3. Con quién compartimos datos</h2>
         <ul>
           <li><strong>AEMPS / CIMA</strong>: recibe el código que tú consultas (nombre o C.N.), según su propia política de privacidad, disponible en su web oficial.</li>
           <li><strong>Google (Firebase Analytics y Crashlytics)</strong>: actúa como encargado de tratamiento para las estadísticas de uso y los informes de fallos descritos arriba.</li>
+          <li><strong>Meta Platforms Ireland Ltd. (SDK de Meta)</strong>: recibe los eventos de la app descritos arriba para medir la atribución de nuestras campañas publicitarias, según su propia <a href="https://www.facebook.com/privacy/policy/" target="_blank" rel="noopener">política de privacidad</a>.</li>
         </ul>
-        <p>No vendemos ni cedemos tus datos a terceros con fines comerciales o publicitarios.</p>
+        <p>No vendemos tus datos a terceros.</p>
 
         <h2>4. Cuánto tiempo conservamos los datos</h2>
         <p>
           El inventario de medicamentos permanece en tu dispositivo mientras
           tengas la app instalada, o hasta que borres cada medicamento o
           desinstales la app. Los datos de analítica y fallos se conservan
-          según los periodos de retención por defecto de Firebase (Google),
-          que puedes consultar en su documentación.
+          según los periodos de retención por defecto de Firebase (Google), y
+          los eventos de medición publicitaria según los de Meta, que puedes
+          consultar en la documentación de cada servicio.
         </p>
 
         <h2>5. Tus derechos</h2>
@@ -82,7 +86,7 @@
           directo sobre él: puedes editarlo, borrarlo medicamento a
           medicamento o eliminarlo por completo desinstalando la app. Si
           quieres ejercer tus derechos de acceso, rectificación, supresión
-          u oposición sobre los datos tratados vía Firebase, puedes
+          u oposición sobre los datos tratados vía Firebase o Meta, puedes
           escribirnos a <a href="mailto:hola@medbox.app">hola@medbox.app</a>.
         </p>
 
